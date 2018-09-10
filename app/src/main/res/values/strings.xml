@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">Nirdhast</string>
+
+    <!-- Button Texts-->
+    <string name="btn_liv_track">Live Tracking</string>
+    <string name="btn_geofence">Geofence</string>
+    <string name="btn_history">View History</string>
+    <string name="btn_caregivers">Care Givers</string>
+    <string name="btn_user_details">User Details</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- Live Tracking Activity-->
+    <string name="title_activity_live_track">Live Tracking</string>
+    <string name="tracking_address">Marker Address</string>
+    <string name="menu_start">Start</string>
+    <string name="menu_stop">Stop</string>
+
+    <!-- HomeGeofence Activity-->
+    <string name="title_activity_geofence">Geofence</string>
+    <string name="geofence_radius_hint">Enter radius(meters)</string>
+    <string name="geofence_address">Click on Map to select home</string>
+    <string name="menu_save">Save</string>
+    <string name="menu_clear">Clear</string>
+
+
+    <!-- History Activity-->
+    <string name="title_activity_history">History</string>
+    <string name="history_date_hint">Date</string>
+    <string name="history_btn_date">Set Date</string>
+    <string name="history_details">Address</string>
+    <string name="marker_address_label">Click on marker to get address</string>
+
+    <!-- Caregiver Activity-->
+    <string name="title_activity_care_givers">CareGivers</string>
+    <string name="caregiver1_title">Caregiver 1</string>
+    <string name="caregiver2_title">Caregiver 2</string>
+    <string name="caregiver_name_hint">Enter Name</string>
+    <string name="caregiver_phone_hint">Enter Phone</string>
+
+
+    <!-- User Details Activity-->
+    <string name="title_activity_user_details">User Details</string>
+    <string name="name_hint">Enter Name</string>
+    <string name="phone_hint">Enter Phone</string>
+    <string name="address_hint">Enter Address</string>
+    <string name="bloodgroup_hint">Enter Bloodgroup</string>
+
+    <!-- location service-->
+    <string name="launch_activity">Launch activity</string>
+    <string name="location_unknown">Location unknown</string>
+    <string name="location_updates_label">Location Updates</string>
+
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.</string>
+    <string name="settings">Settings</string>
+    <string name="ok">OK</string>
+    <string name="request_location_updates">Request location updates</string>
+    <string name="remove_location_updates">Remove location updates</string>
+
+    <string name="location_updated">Location Updated: %1$s</string>
+
+
+    <!-- Error Messages -->
+    <string name="err_msg_radius">Enter Your Radius</string>
+    <string name="err_msg_invalid_radius">Radius should be >= 100m</string>
+
+    <string name="err_msg_name">Enter name</string>
+    <string name="err_msg_invalid_name">Enter Valid Name</string>
+
+    <string name="err_msg_phone">Enter Phone</string>
+    <string name="err_msg_invalid_phone">Enter Valid Phone</string>
+
+    <string name="err_msg_address">Enter Address</string>
+    <string name="err_msg_invalid_address">Enter Valid Address</string>
+
+    <string name="err_msg_bloodgroup">Enter Blood Group</string>
+    <string name="err_msg_invalid_bloodgroup">Enter Valid Blood Group</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="title_activity_sign_in">Sign In</string>
+
+
+    <string name="email_hint">Enter Email</string>
+    <string name="password_hint">Enter Password</string>
+    <string name="re_password_hint">Re Enter Password</string>
+    <string name="btn_sign_in">Sign In</string>
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="menu_sign_out">Sign Out</string>
+    <string name="forgot_pwd_title">Forgot Password ?</string>
+    <string name="sign_up_title">Sign Up</string>
+
+    <string name="err_msg_invalid_password">Atleast 6 characters are needed</string>
+    <string name="err_msg_invalid_email">Invalid email</string>
+    <string name="err_msg_invalid_re_password">Password do not match</string>
+
+    <string name="err_msg_email">Enter Email</string>
+    <string name="err_msg_pwd">Enter Password</string>
+    <string name="err_msg_re_pwd">Re Enter Password</string>
+
+
+    <!-- Widget -->
+    <string name="appwidget_title">Details</string>
+    <string name="appwidget_name">Name </string>
+    <string name="appwidget_phone">Phone </string>
+    <string name="appwidget_address">Address </string>
+    <string name="appwidget_bloodgroup">BloodGroup </string>
+
+    <string name="appwidget_caregiver_title">Caregivers</string>
+    <string name="appwidget_caregiver1_name">Caregiver 1 Name </string>
+    <string name="appwidget_caregiver1_phone">Caregiver 1 Phone </string>
+    <string name="appwidget_caregiver2_name">Caregiver 2 Name </string>
+    <string name="appwidget_caregiver2_phone">Caregiver 2 Phone </string>
+
+    <string name="add_widget">Add widget</string>
+
+    <string name="error_msg">Please connect to internet and retry</string>
+    <string name="btn_retry">Retry</string>
+
+    <string name="gps_network_not_enabled">GPS not enabled</string>
+    <string name="open_location_settings">Open Location Settings</string>
+    <string name="Cancel">Cancel</string>
+
+    <string name="password_sent_msg">Password reset link sent</string>
+    <string name="password_reset_title">Password Reset</string>
+    <string name="password_reset_send">Send</string>
+
+    <string name="marker_home">Home</string>
+    <string name="marker_current">You are here!</string>
+    <string name="enable_location_permission">Enable location permission to continue</string>
+    <string name="enter_user_caregiver_details">Please enter User and Caregiver
+        details before Tracking</string>
+    <string name="geofence_tracking_set">Geofence cannot be set when tracking is on</string>
+    <string name="caregiver_tracking_set">Caregivers cannot be set when tracking is on</string>
+    <string name="user_details_tracking_set">User Details cannot be set when tracking is on</string>
+    <string name="history_tracking_set">History cannot be viewed when tracking is on</string>
+    <string name="sign_out_tracking_set">User cannot signOut when tracking is on</string>
+
+    <string name="tracking_started">Tracking Started</string>
+    <string name="tracking_stopped">Tracking Stopped</string>
+
+    <string name="geofence_enter_message">User has entered Geofence</string>
+    <string name="geofence_exit_message">User has exited Geofence</string>
+    <string name="unknown_location">Unknown location</string>
+
+    <string name="marker_address_time">Address: %1$s \n %2$s </string>
+    <string name="marker_address_only">Address: %1$s </string>
+
+</resources>

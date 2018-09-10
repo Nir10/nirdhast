@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".GeofenceActivity"
+    android:padding="@dimen/vertical"
+    android:background="@color/lightGrey"
+    tools:showIn="@layout/activity_geofence">
+
+
+    <ScrollView
+        android:scrollbarThumbVertical="@null"
+        android:nestedScrollingEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/card_view"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/vertical"
+        android:id="@+id/layout_geofence"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/Margins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_layout_radius">
+
+        <!--android:layout_marginTop="25dp"-->
+    <EditText
+        android:id="@+id/et_radius"
+        android:inputType="numberDecimal"
+        android:hint="@string/geofence_radius_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <fragment
+        android:layout_marginTop="@dimen/vertical"
+        android:id="@+id/geofenceMap"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <TextView
+        style="@style/Margins"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/vertical"
+        android:id="@+id/tv_geofence_adress"
+        android:hint="@string/geofence_address"
+        android:layout_width="match_parent"
+        android:minLines="4"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="invisible"
+        android:orientation="vertical"
+        android:id="@+id/layout_geofence_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/Margins"
+            android:layout_marginTop="@dimen/vertical"
+            android:id="@+id/tv_live_track_error"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:hint="@string/error_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

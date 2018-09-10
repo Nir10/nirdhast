@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorButtonNormal">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Margins">
+        <item name="android:layout_marginEnd">@dimen/horizontal</item>
+        <item name="android:layout_marginRight">@dimen/horizontal</item>
+        <item name="android:layout_marginStart">@dimen/horizontal</item>
+        <item name="android:layout_marginLeft">@dimen/horizontal</item>
+    </style>
+
+    <style name="MapMargins">
+        <item name="android:layout_marginTop">@dimen/vertical</item>
+        <item name="android:layout_marginEnd">@dimen/horizontal</item>
+        <item name="android:layout_marginRight">@dimen/horizontal</item>
+        <item name="android:layout_marginStart">@dimen/horizontal</item>
+        <item name="android:layout_marginLeft">@dimen/horizontal</item>
+    </style>
+
+    <style name="WidgetMargins">
+        <item name="android:layout_marginTop">@dimen/vertical_half</item>
+        <item name="android:layout_marginEnd">@dimen/horizontal_half</item>
+        <item name="android:layout_marginRight">@dimen/horizontal_half</item>
+        <item name="android:layout_marginStart">@dimen/horizontal_half</item>
+        <item name="android:layout_marginLeft">@dimen/horizontal_half</item>
+    </style>
+</resources>

@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:padding="@dimen/widget_margin">
+
+<LinearLayout
+    android:id="@+id/layout_header"
+    android:padding="@dimen/horizontal_half"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginStart="@dimen/horizontal_half"
+        android:id="@+id/appwidget_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/appwidget_title"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/layout_header"
+        android:background="@android:color/white"
+        style="@style/WidgetMargins"
+        android:padding="@dimen/horizontal_half"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/appwidget_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/appwidget_name"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="start"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/appwidget_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/appwidget_phone"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="start"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/appwidget_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/appwidget_address"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="start"
+            android:maxLines="3"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/appwidget_bloodgroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/appwidget_bloodgroup"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="start"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/appwidget_caregiver_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/appwidget_caregiver_title"
+            android:text="@string/appwidget_caregiver_title"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/appwidget_caregiver1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/appwidget_caregiver1_phone"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="start"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/appwidget_caregiver1_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/appwidget_caregiver1_phone"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="start"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/appwidget_caregiver2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/appwidget_caregiver2_phone"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="start"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/appwidget_caregiver2_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/appwidget_caregiver2_phone"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="start"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</RelativeLayout>

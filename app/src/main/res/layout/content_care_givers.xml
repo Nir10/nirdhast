@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".CareGiversActivity"
+    android:background="@color/lightGrey"
+    android:padding="@dimen/vertical"
+    tools:showIn="@layout/activity_care_givers">
+
+    <ScrollView
+        android:scrollbarThumbVertical="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/card_view"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:padding="@dimen/vertical"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/tv_caregiver1"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:text="@string/caregiver1_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="@dimen/vertical_half"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_layout_caregiver1_name">
+            <EditText
+                android:id="@+id/et_caregiver1_name"
+                android:hint="@string/caregiver_name_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="@dimen/vertical_half"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_layout_caregiver1_phone">
+            <EditText
+                android:id="@+id/et_caregiver1_phone"
+                android:inputType="phone"
+                android:hint="@string/caregiver_phone_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="@dimen/vertical"
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:id="@+id/tv_caregiver2"
+        android:text="@string/caregiver2_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="@dimen/vertical_half"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_layout_caregiver2_name">
+            <EditText
+                android:id="@+id/et_caregiver2_name"
+                android:hint="@string/caregiver_name_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="@dimen/vertical_half"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_layout_caregiver2_phone">
+            <EditText
+                android:id="@+id/et_caregiver2_phone"
+                android:inputType="phone"
+                android:hint="@string/caregiver_phone_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
